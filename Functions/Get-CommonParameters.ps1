@@ -49,7 +49,7 @@ function Get-CommonParameters
             Position = 0,
             HelpMessage = "Specify to format output as a Table. Default formatting is as List."
         )]
-        [Switch]$AsTable
+        [Switch]$Detailed
     )
 
     BEGIN
@@ -138,7 +138,7 @@ function Get-CommonParameters
 
     PROCESS
     {
-        if ($Detailed) { $CommonParameters | Format-List } else { $CommonParameters | Select-Object -First 3 | Format-Table }
+        if ($Detailed) { $CommonParameters | Format-List } else { $CommonParameters | Format-Table -Property Parameter,Type,Alias }
     }
 
     END
