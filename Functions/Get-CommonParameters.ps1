@@ -11,7 +11,7 @@ function Get-CommonParameters
             Switch. Includes a Description of each Parameters functionality/use. 
 
         .EXAMPLE
-            PS C:\> Get-CommonParameters
+            PS C:\> Get-CommonParameters -Detailed
             
             Parameter   : OutVariable
             Category    : Common
@@ -138,7 +138,7 @@ function Get-CommonParameters
 
     PROCESS
     {
-        if ($Detailed) { $CommonParameters | Format-List } else { $CommonParameters | Format-Table -Property Parameter,Type,Alias }
+        if ($Detailed) { $CommonParameters | Format-List } else { $CommonParameters | Format-Table -Property Parameter,Type,Aliases }
     }
 
     END
