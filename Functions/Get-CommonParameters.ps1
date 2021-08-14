@@ -35,7 +35,10 @@ function Get-CommonParameters
                               pipeline. If you omit this parameter, objects are sent as they're generated.
 
         .LINK
-            https://github.com/Xenirvana
+            https://github.com/Xenirvana/My-PowerShell-Configuration
+
+        .LINK
+            https://github.com/Xenirvana/PowerShell-Workshop
 
         .NOTES
             This Function is intended to be similar to the Get-Verb Cmdlet, and is useful for PowerShell Development tasks.
