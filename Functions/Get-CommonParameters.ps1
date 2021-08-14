@@ -57,7 +57,7 @@ function Get-CommonParameters
         $CommonParameters = @(
             [PSCustomObject]@{
                 Parameter = 'OutVariable'
-                Type = 'String', ''
+                Type = 'Common', 'String'
                 Aliases = 'ov'
                 Description = 'Stores output objects from the command in the specified variable in addition to sending the output along the pipeline.'
             }
